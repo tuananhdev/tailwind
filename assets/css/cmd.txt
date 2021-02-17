@@ -1,0 +1,2 @@
+$env:NODE_ENV="development"
+npx tailwindcss-cli@latest build tailwind.css -c tailwind.config.js -o app.css
