@@ -15,11 +15,13 @@ default = 1
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ this.page.title }} - DEV</title>
-    <link href="{{ ['assets/fonts/icomoon.css', 'assets/css/app.css']|theme }}" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="{{ ['assets/fonts/icofont.css', 'assets/css/aos.css', 'assets/css/app.css']|theme }}" rel="stylesheet">
 </head>
 <body>
     <div id="wrap">
-        <header id="siteHeader" class="sticky top-0 transition-all duration-300 bg-white">
+        <header id="siteHeader" class="sticky top-0 z-50 transition-all duration-300 bg-white">
             {% partial 'site/header' %}
         </header>
         <main>
@@ -29,7 +31,7 @@ default = 1
             {% partial 'site/footer' %}
         </footer>
     </div>
-    <script src="{{ ['assets/js/jquery.js', 'assets/js/app.js']|theme }}"></script>
+    <script src="{{ ['assets/js/jquery.js', 'assets/js/aos.js', 'assets/js/app.js']|theme }}"></script>
     {% framework extras %}
     {% scripts %}
 </body>

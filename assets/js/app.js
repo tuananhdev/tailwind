@@ -1,4 +1,7 @@
 $(document).ready(function () {
+    AOS.init({
+        disable: 'phone'
+    });
     // Auto show/hide header on scroll
     var lastScrollTop = 0;
     $(window).scroll(function () {
@@ -6,9 +9,9 @@ $(document).ready(function () {
         var siteHeader = $('#siteHeader');
         setTimeout(function () {
             if (st > lastScrollTop) {
-                siteHeader.addClass('-top-16');
+                siteHeader.addClass('-top-20');
             } else {
-                siteHeader.removeClass('-top-16');
+                siteHeader.removeClass('-top-20');
             }
             lastScrollTop = st;
         }, 100);
