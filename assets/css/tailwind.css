@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.list-check li:before {
+    content: '\ea10';
+    font-family: 'icomoon';
+    @apply text-green-500 mr-2;
+}

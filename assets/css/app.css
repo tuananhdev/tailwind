@@ -32692,6 +32692,14 @@ select {
           animation: bounce 1s infinite;
 }
 
+.list-check li:before {
+  content: '\ea10';
+  font-family: 'icomoon';
+  margin-right: 0.5rem;
+  --tw-text-opacity: 1;
+  color: rgba(16, 185, 129, var(--tw-text-opacity));
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
